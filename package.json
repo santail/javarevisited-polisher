@@ -1,0 +1,24 @@
+{
+  "name": "javarevisited",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app"
+  },
+  "dependencies": {
+    "connect": "2.7.2",
+    "cheerio": "0.10.6",
+    "request": "2.12.0"
+  },
+  "gitHead": "20e6f926a95f365196e171577cda5987ce6dc686",
+  "readmeFilename": "README.md",
+  "description": "javarevisited-polisher ======================",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/santail/javarevisited-polisher.git"
+  },
+  "author": "Nikolai Muhhin <nikolai.muhhin@gmail.com>",
+  "license": "BSD"
+}
