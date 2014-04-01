@@ -52,10 +52,17 @@ var app = connect()
                 $.root().find('body').html(content);
 
                 $.root().find('body').find('a').each(function(i, el) {
-                    var href = $(this).attr('href');
+                    var $this = $(this);
 
-                    if (href) {
-                        $(this).attr('href', polished + url.parse(href).path);
+                    if ($this.children().length === 1 && $this.children()[0].name === 'img' ) {
+                        $this.remove();
+                    }
+                    else {
+                        var href = $(this).attr('href');
+
+                        if (href) {
+                            $(this).attr('href', polished + url.parse(href).path);
+                        }
                     }
                 })
 
